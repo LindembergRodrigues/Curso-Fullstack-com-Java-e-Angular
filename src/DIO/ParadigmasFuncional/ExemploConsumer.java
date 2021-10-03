@@ -1,4 +1,4 @@
-package DIO.ParadigmasFuncional.Consumer;
+package DIO.ParadigmasFuncional;
 
 import java.util.function.Consumer;
 

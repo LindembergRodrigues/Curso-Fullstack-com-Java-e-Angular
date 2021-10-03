@@ -1,4 +1,4 @@
-package DIO.ParadigmasFuncional.recursividade;
+package DIO.ParadigmasFuncional;
 import java.util.Scanner;
 public class aulaRecursividade {
     public static long fatorial(long num) {
