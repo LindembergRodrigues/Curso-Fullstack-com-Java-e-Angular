@@ -45,20 +45,22 @@ public class agendaAulaMap {
             public int compare(Map.Entry<Integer, Contato> cont1, Map.Entry<Integer, Contato> cont2) {
                 return Integer.compare(cont1.getValue().getTelefone(),cont2.getValue().getTelefone());
             }
-        });*/
+        });
         Set<Map.Entry<Integer, Contato>> agenda4 = new TreeSet<>( Comparator.comparing(
                 new Function<Map.Entry<Integer, Contato>, Integer>() {
                     @Override
                     public Integer apply(Map.Entry<Integer, Contato> cont) {
                         return cont.getValue().getTelefone();
                     }
-                }));
-                agenda4.addAll(agenda3.entrySet());
+                }));*/
+        Set<Map.Entry<Integer, Contato>> agenda4 = new TreeSet<>( Comparator.comparing(
+               cont ->  cont.getValue().getTelefone()));
+
+        agenda4.addAll(agenda3.entrySet());
         System.out.println("\nOrdena por Telefone ");
         for(Map.Entry<Integer, Contato> agendaIt : agenda4){
             System.out.println(agendaIt.getKey()+ " - " + agendaIt.getValue().getNome() + " - " + agendaIt.getValue().getTelefone());
         }
-
 
     }
 }
