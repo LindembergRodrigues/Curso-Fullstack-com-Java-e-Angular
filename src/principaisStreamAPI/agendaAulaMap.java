@@ -1,7 +1,6 @@
-package PrincipaisStreamAPI;
+package principaisStreamAPI;
 
 import java.util.*;
-import java.util.function.Function;
 
 public class agendaAulaMap {
     public static void main(String[] args) {

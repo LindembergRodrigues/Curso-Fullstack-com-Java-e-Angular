@@ -1,4 +1,4 @@
-package DIO;
+package dio;
 
 import Java.modular.DIO2.Calculadora;
 

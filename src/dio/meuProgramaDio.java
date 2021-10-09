@@ -1,4 +1,4 @@
-package DIO;
+package dio;
 
 public class meuProgramaDio {
     public static void main(String[] args) {

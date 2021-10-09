@@ -1,4 +1,4 @@
-package DIO.releaseJ11;
+package dio.releaseJ11;
 
 import java.io.BufferedReader;
 import java.io.IOException;

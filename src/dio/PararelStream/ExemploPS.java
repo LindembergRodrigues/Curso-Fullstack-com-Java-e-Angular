@@ -1,4 +1,4 @@
-package DIO.PararelStream;
+package dio.PararelStream;
 
 import java.util.stream.IntStream;
 

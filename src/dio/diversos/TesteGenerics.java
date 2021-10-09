@@ -1,4 +1,4 @@
-package DIO.diversos;
+package dio.diversos;
 
 import java.util.EmptyStackException;
 

@@ -1,4 +1,4 @@
-package DIO.ParadigmasFuncional;
+package dio.ParadigmasFuncional;
 /*
 antes da v.8 do java era necessário criar uma interface fora da classe para que pudesse
 gerar uma estrutura no código que executasse tal tarefa

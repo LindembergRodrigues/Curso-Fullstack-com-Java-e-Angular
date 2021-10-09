@@ -1,15 +1,10 @@
-package DIO.releaseJ11;
+package dio.releaseJ11;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.URI;
-import java.net.URL;
-import java.net.URLConnection;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.stream.Collectors;
 
 public class RJ11HTTPCliente {
     public static void main(String[] args) throws IOException, InterruptedException {

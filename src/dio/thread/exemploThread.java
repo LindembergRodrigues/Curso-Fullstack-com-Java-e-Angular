@@ -1,4 +1,4 @@
-package DIO.thread;
+package dio.thread;
 
 public class exemploThread {
     public static void main(String[] args) {
