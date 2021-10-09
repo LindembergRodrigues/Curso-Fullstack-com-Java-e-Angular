@@ -1,4 +1,4 @@
-package eda.nó;
+package eda.no;
 
 public class GerarNo {
     public static void main(String[] args) {

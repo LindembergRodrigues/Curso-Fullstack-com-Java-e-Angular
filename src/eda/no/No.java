@@ -1,11 +1,11 @@
-package eda.nó;
+package eda.no;
 
 public class No<T> {
 
     private T conteudo;
     private No<T> proximoNo;
 
-    No(T conteudo){
+    public No(T conteudo){
         this.conteudo = conteudo;
         this.proximoNo = null;
 
