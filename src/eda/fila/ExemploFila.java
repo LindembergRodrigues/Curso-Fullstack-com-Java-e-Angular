@@ -1,7 +1,6 @@
 package eda.fila;
 
 import eda.no.No;
-import eda.pilha.Pilha;
 
 public class ExemploFila {
 
@@ -10,7 +9,7 @@ public class ExemploFila {
         Fila fila = new Fila();
 
         for(int num : numeros ){
-            fila.enqueue(new No(num));
+            fila.enqueue(new No<>(num));
         }
         System.out.println("inicio\n" + fila);
         while (!fila.isEmpty()){

@@ -16,21 +16,24 @@ public class Fila {
     }
 
     public No dequeue(){
-        No auxNo = no;
-        No auxNo2 = no;
-        while  (true){
-            if (auxNo.getProximoNo() != null) {
-                auxNo2= auxNo;
-                auxNo = auxNo2.getProximoNo();
-            }else {
-                auxNo2.setProximoNo(null);
-                break;
+        if (!this.isEmpty()) {
+            No auxNo = no;
+            No auxNo2 = no;
+            while (true) {
+                if (auxNo.getProximoNo() != null) {
+                    auxNo2 = auxNo;
+                    auxNo = auxNo2.getProximoNo();
+                } else {
+                    if(auxNo2.equals(auxNo)){
+                        no = null;
+                    }
+                    auxNo2.setProximoNo(null);
+                    break;
+                }
             }
+            return auxNo;
         }
-
-        return auxNo == auxNo2 ? null: auxNo2;
-
-
+        return null;
     }
 
     public No first (){
@@ -50,7 +53,7 @@ public class Fila {
     }
 
     public boolean isEmpty() {
-        return   no==null ? true : false;
+        return no == null;
     }
 
     @Override
@@ -59,11 +62,12 @@ public class Fila {
         String retornoNO = "";
 
         while (noFila != null){
-            retornoNO += noFila.getConteudo()+ "\n";
+            retornoNO += noFila.getConteudo()+ ", ";
+
             noFila = noFila.getProximoNo();
         }
 
-        return retornoNO;
+        return (retornoNO.length() > 0) ? retornoNO.substring(0, retornoNO.lastIndexOf(",")): retornoNO;
    }
 }
 
