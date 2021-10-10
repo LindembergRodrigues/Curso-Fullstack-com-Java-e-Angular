@@ -2,14 +2,14 @@ package eda.fila;
 
 import eda.no.No;
 
-public class Fila {
+public  class Fila<T>{
 
     private No no;
     Fila(){
         no = null;
     }
 
-    public void enqueue(Object obj){
+    public void enqueue(T obj){
         No dados = new No(obj);
         dados.setProximoNo((no));
         no = dados;
