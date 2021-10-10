@@ -9,7 +9,7 @@ public class ExemploFila {
         Fila fila = new Fila();
 
         for(int num : numeros ){
-            fila.enqueue(new No<>(num));
+            fila.enqueue(num);
         }
         System.out.println("inicio\n" + fila);
         while (!fila.isEmpty()){

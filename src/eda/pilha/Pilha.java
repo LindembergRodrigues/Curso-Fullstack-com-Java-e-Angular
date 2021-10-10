@@ -29,7 +29,8 @@ public class Pilha {
 
     }
 
-    public void push(No no){
+    public void push(Object obj) {
+        No no = new No(obj);
         No auxiliar = refNo;
         refNo = no;
         refNo.setProximoNo(auxiliar);

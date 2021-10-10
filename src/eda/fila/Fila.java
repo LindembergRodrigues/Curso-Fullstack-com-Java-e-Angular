@@ -9,7 +9,8 @@ public class Fila {
         no = null;
     }
 
-    public void enqueue(No dados){
+    public void enqueue(Object obj){
+        No dados = new No(obj);
         dados.setProximoNo((no));
         no = dados;
 

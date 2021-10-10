@@ -8,10 +8,10 @@ public class ExemploPilha {
         Pilha pilha = new Pilha();
 
         for(int num : numeros ){
-            pilha.push(new No(num));
+            pilha.push(num);
         }
 
-        //System.out.println(pilha);
+        System.out.println(pilha);
         while (!pilha.isEmpty()){
             System.out.println(pilha.pop());
         }
