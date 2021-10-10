@@ -12,12 +12,11 @@ public class ExemploFila {
         for(int num : numeros ){
             fila.enqueue(new No(num));
         }
-        System.out.println(fila);
+        System.out.println("inicio\n" + fila);
         while (!fila.isEmpty()){
-            System.out.println(fila.dequeue());
+            System.out.println("Removido " + fila.dequeue());
+            System.out.println(fila);
         }
-
-        System.out.println(fila);
 
     }
 }

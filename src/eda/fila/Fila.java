@@ -16,27 +16,33 @@ public class Fila {
     }
 
     public No dequeue(){
-        No auxNo = first();
+        No auxNo = no;
+        No auxNo2 = no;
         while  (true){
-            if (no.getProximoNo() == null) {
-                no = no.getProximoNo();
-                no.setProximoNo(null);
-
+            if (auxNo.getProximoNo() != null) {
+                auxNo2= auxNo;
+                auxNo = auxNo2.getProximoNo();
             }else {
+                auxNo2.setProximoNo(null);
                 break;
             }
         }
-        return auxNo;
+
+        return auxNo == auxNo2 ? null: auxNo2;
+
 
     }
 
     public No first (){
         if (!isEmpty()){
             No auxNo = no;
-            while(auxNo.getProximoNo() != null){
-                auxNo = auxNo.getProximoNo();
+            while(true){
+                if (auxNo.getProximoNo() != null){
+                    auxNo = auxNo.getProximoNo();
+                }else{
+                    break;
+                }
             }
-
             return auxNo;
         }else{
             return null;
@@ -49,16 +55,15 @@ public class Fila {
 
     @Override
     public String toString() {
+        No noFila = no;
+        String retornoNO = "";
 
-        String aux = "\tFila\n<==========>\n";
-
-        while (no != null){
-            aux += no.getConteudo()+ "\n";
-            no = no.getProximoNo();
+        while (noFila != null){
+            retornoNO += noFila.getConteudo()+ "\n";
+            noFila = noFila.getProximoNo();
         }
 
-        aux += "<==========>\n";
-        return aux;
+        return retornoNO;
    }
 }
 

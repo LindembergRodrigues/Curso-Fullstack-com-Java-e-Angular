@@ -37,13 +37,14 @@ public class Pilha {
 
     @Override
     public String toString() {
-        String aux = "\tPilha\n<==========>\n";
-        while (refNo != null){
-                aux += refNo.getConteudo()+ "\n";
-                refNo = refNo.getProximoNo();
+        No noPilha = refNo;
+        String retornoNO = "";
+        while (noPilha != null){
+            retornoNO += noPilha.getConteudo()+ "\n";
+            noPilha = noPilha.getProximoNo();
 
         }
-        aux += "<==========>\n";
-        return aux;
+
+        return retornoNO;
     }
 }

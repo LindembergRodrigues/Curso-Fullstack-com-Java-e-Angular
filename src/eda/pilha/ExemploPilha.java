@@ -4,18 +4,19 @@ import eda.no.No;
 
 public class ExemploPilha {
     public static void main(String[] args) {
-        int [] numeros = {1,2,3,4,5,6};
+        int [] numeros = {1,2,3,6,5,4};
         Pilha pilha = new Pilha();
 
         for(int num : numeros ){
             pilha.push(new No(num));
         }
-        System.out.println(pilha);
+
+        //System.out.println(pilha);
         while (!pilha.isEmpty()){
             System.out.println(pilha.pop());
         }
 
-        System.out.println(pilha);
+
     }
 }
 
