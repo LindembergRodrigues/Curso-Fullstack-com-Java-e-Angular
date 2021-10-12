@@ -11,6 +11,11 @@ public class No<T> {
 
     }
 
+    public No(T conteudo, No<T> proximoNo) {
+        this.conteudo = conteudo;
+        this.proximoNo = proximoNo;
+    }
+
     public T getConteudo() {
         return conteudo;
     }
