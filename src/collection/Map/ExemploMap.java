@@ -6,7 +6,7 @@ public class ExemploMap{
 	public static void main(String [] args){
 
 		System.out.println("Aula sobre Map");
-		Map<String, Double> carros = new HashMap<>(){{
+		Map<String, Double> carros = new HashMap<String, Double>(){{
 			put("Gol",14.4);
 			put("Uno",15.6);
 			put("Mobi",16.1);
@@ -59,7 +59,7 @@ public class ExemploMap{
 		}
 		System.out.println("\n Após remoção "+ carros.values());
 
-		Map<String, Double> carros2 = new LinkedHashMap<>(){{
+		Map<String, Double> carros2 = new LinkedHashMap<String, Double>(){{
 			put("Gol",14.4);
 			put("Uno",15.6);
 			put("Mobi",16.1);
